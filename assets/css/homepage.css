@@ -33,7 +33,7 @@ border: none;
 	color: white;
 	font-weight: bold;
 	font-size: 50px;
-	margin: 0.25%  0 0.25% 0;
+	margin: 1% 0 0.25% 0;
 	padding: 0.5% 4% 0.5% 4%;
 	border: none;
 	border-radius: 4%;
@@ -67,6 +67,7 @@ background-color: #169bd9;
 	overflow: auto;
 	background: linear-gradient (#220605,#000000);
 	font-size: 100%;
+	z-index: 0;
 }
 
 .vertical-nav-ul
@@ -74,6 +75,7 @@ background-color: #169bd9;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	z-index: 0;
 }
 
 .content
@@ -114,6 +116,11 @@ background-color: #340d0e;
 color: white;
 }
 
+.company-name:hover
+{
+color: white;
+}
+
 #horizontal-nav-bar
 {
 	min-height: 150px;
@@ -125,6 +132,7 @@ color: white;
 	overflow: auto;
 	background: linear-gradient (#220605,#000000);
 	font-size: 1em;
+	z-index: 0;
 }
 
 .horizontal
@@ -135,7 +143,6 @@ padding: 1% 1.5%;
 text-align: center;
 text-decoration: none;
 font-weight: bold;
-color: grey;
 }
 
 .horizontal:hover
@@ -150,6 +157,7 @@ color: white;
 	padding: 0;
 	overflow: hidden;
 	width: 90%;
+	height: 100%
 
 }
 
@@ -160,8 +168,6 @@ display: block;
 padding: 1% 1.5%;
 text-align: center;
 text-decoration: none;
-color: grey;
-
 }
 
 .top-left
@@ -244,9 +250,8 @@ display: block;
 .region-dropdown-button
 {
 	background: none;
-	border: none;
+	border: 1px solid #2a364d;
 	color: white;
-	padding: 3%;
 }
 
 .region-dropdown-content
@@ -270,6 +275,48 @@ display: block;
     display: block;
 }
 
+.blizz-dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: #1d222c;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.blizz-dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.blizz-dropdown-content a:hover {background-color: #2a364d}
+
+.dropdown:hover .blizz-dropdown-content {
+    display: block;
+}
+
+.profile-dropdown-content
+{
+	display: none;
+	position: absolute;
+	background-color: #1d222c;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.profile-dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-dropdown-content a:hover {background-color: #2a364d}
+
+.dropdown:hover .profile-dropdown-content {
+    display: block;
+}
+
 .show
 {
 	display: block;
@@ -288,7 +335,7 @@ display: block;
 body
 {
 	margin: 0;
-	color: grey;
+	color: #9fa2a6;
 	font-family: 'Oswald', sans-serif;
 	background-image: url(../images/launcherBG.jpg);
 	background-repeat: no-repeat;
@@ -300,17 +347,22 @@ body
 a
 {
 text-decoration: none;
-color:#0a8ecb;
+color:#0b72a8;
 }
 
 li i 
 {
 	padding: 1%;
-	font-size: 1em;
+	font-size: 1.2em;
+	border: 1px solid #9fa2a6;
 }
 
 html
 {
 	width: 100%;
 	background-color: black;
+}
+button i
+{
+	color: #0b72a8;
 }

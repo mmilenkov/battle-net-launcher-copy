@@ -10,23 +10,35 @@
 <div id="background">
 	<div id="horizontal-nav-bar">
 		<ul class="horizontal-nav-ul">
-			<li class="horizontal">BLIZZARD</li> <!-- Dropdown nav bar by itself -->
+			<li class="horizontal dropdown">BLIZZARD
+				<div class="blizz-dropdown-content">
+					<a href="">Placeholder 1</a>
+					<a href="">Placeholder 2</a>
+					<a href="">Placeholder 3</a>
+				</div>
+			</li> <!-- Dropdown nav bar by itself -->
 			<li class="horizontal selected">GAMES</li>
 			<li class="horizontal">SOCIAL</li>
 			<li class="horizontal">SHOP</li>
 			<li class="horizontal">NEWS</li>
 			<li class="horizontal">Overwatch league</li>
 			<div class="horizontal-nav-bar-left">
-				<li class="horizontal"><i class="far fa-user"></i></li> <!-- Dropdown nav bar by itself -->
+				<li class="horizontal dropdown"><i class="far fa-user"></i>
+				<div class="profile-dropdown-content">
+						<a href="">Placeholder 1</a>
+						<a href="">Placeholder 2</a>
+						<a href="">Placeholder 3</a>
+					</div>
+				</li> <!-- Dropdown nav bar by itself -->
 				<li class="horizontal"><i class="fas fa-video"></i></li>
-				<li class="horizontal"><i class="fas fa-users"></i></li> <!-- dropdown with online friends -->
+				<li class="horizontal"><i class="fas fa-users">8</i></li> <!-- dropdown with online friends -->
 			</div>
 		</ul>
 	</div>
 
 	<div id="vertical-nav-bar">
 		<ul class="vertical-nav-ul">
-			<li class="vertical company-name"><span id="ver-nav">BLLIZZARD</span></li>
+			<li class="vertical company-name"><span>BLLIZZARD</span></li>
 			<li class="vertical selected2"> <img class="icons" src="assets/images/wow_icon.png"><span id="ver-nav">World of Warcraft </span></li>
 			<li class="vertical"> <img class="icons" src="assets/images/diablo_icon.png"><span id="ver-nav"> Diablo III</span></li>
 			<li class="vertical"> <img class="icons" src="assets/images/starcraft2_icon.png"><span id="ver-nav">StarCraft II</span></li>
@@ -46,14 +58,14 @@
 			<br>
 			<div id="top-left-buttons">
 				<div class="dropdown">
-					<button class="options-dropdown-button">Options ^</button>
+					<button class="options-dropdown-button"><i class="fas fa-cog"></i> Options <i class="fas fa-angle-down"></i></button>
 					<div id="options-dropdown" class="options-dropdown-content">
 						<a href="">Placeholder 1</a>
 						<a href="">Placeholder 2</a>
 						<a href="">Placeholder 3</a>
 					</div>
 				</div>
-				<button type="button" id="redeem-code">Redeem a code </button>
+				<button type="button" id="redeem-code"><i class="far fa-check-square"></i> Redeem a code</button>
 			</div>
 		</div>
 		<div class="container">
@@ -72,9 +84,9 @@
 		</div>
 
 		<div class="bottom-left">
-			<p>REGION/ACCOUNT</p>
+			<p>Region/Account</p>
 			<div class="dropdown">
-				<button class="region-dropdown-button">Region/Account</button>
+				<button class="region-dropdown-button">WoW1 (EU): Battle for Azeroth</button>
 				<div id="region-dropdown" class="region-dropdown-content">
 					<a href="">Placeholder 1</a>
 					<a href="">Placeholder 2</a>
